@@ -10,6 +10,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	// testing
 	http.HandleFunc("/", hello)
 	http.ListenAndServe(":8000", nil)
 }
